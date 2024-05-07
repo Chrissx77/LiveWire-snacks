@@ -39,7 +39,6 @@ class UserList extends Component
 
     public function render()
     {
-
         $users = User::paginate(3);
         return view('livewire.user-list', [
             'users' => $users
